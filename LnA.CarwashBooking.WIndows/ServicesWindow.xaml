@@ -1,0 +1,75 @@
+﻿<Window x:Class="LnA.CarwashBooking.WIndows.ServicesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+        xmlns:local="clr-namespace:LnA.CarwashBooking.WIndows"
+        mc:Ignorable="d"
+        Title="ServicesWindow" Height="895.714" Width="940.357">
+    <Grid Margin="0,0,-2,0">
+        <Grid.Background>
+            <SolidColorBrush Color="CornflowerBlue"/>
+        </Grid.Background>
+        <Label Content="" Height="44" VerticalAlignment="Bottom" RenderTransformOrigin="0.501,0.938" Margin="-1,0,0,821" HorizontalAlignment="Left" Width="935">
+            <Label.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </Label.Background>
+        </Label>
+
+        <Image HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Width="131" Source="Logo.png" Margin="82,31,0,0" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="169" Margin="268,44,0,0"  TextWrapping="Wrap" FontSize="24"  VerticalAlignment="Top" Width="474" TextAlignment="Center" Foreground="Gold"><Run Text="L" TextDecorations="Underline"/><Run Text=" "/><Run Foreground="Black" Text="&amp;" TextDecorations="Underline"/><Run Text=" "/><Run Text="A" TextDecorations="Underline"/><LineBreak/><Run Text="Online Car Wash Booking WebApps" TextDecorations="Underline"/></TextBlock>
+        <Label Content="Home" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="151,128,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="About" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="268,128,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="My Profile" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="541,128,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label Content="Services" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="402,128,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label Content="Contact" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="709,128,0,0" VerticalAlignment="Top" Width="85"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="282,195,0,0" RenderTransformOrigin="0.206,0.909">
+            <ComboBoxItem Content="7:00 AM"/>
+            <ComboBoxItem Content="8:00 AM"/>
+            <ComboBoxItem Content="9:00 AM"/>
+            <ComboBoxItem Content="10:00 AM"/>
+            <ComboBoxItem Content="11:00 AM"/>
+            <ComboBoxItem Content="12:00 PM"/>
+            <ComboBoxItem Content="01:00 PM"/>
+            <ComboBoxItem Content="02:00 PM"/>
+            <ComboBoxItem Content="03:00 PM"/>
+            <ComboBoxItem Content="04:00 PM"/>
+            <ComboBoxItem Content="05:00 PM"/>
+        </ComboBox>
+        <Label Content="Select Services :" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="34,302,0,0" VerticalAlignment="Top" Width="132" RenderTransformOrigin="0.712,0.375"/>
+        <DataGrid x:Name="dgServices" HorizontalAlignment="Left" Height="196" VerticalAlignment="Top" Width="323" Margin="37,342,0,0" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Service"
+                      Binding="{Binding Name}" Width="*" />
+                <DataGridTextColumn Header="Description"
+                      Binding="{Binding Desc}" Width="*" />
+                <DataGridTextColumn Header="Price"
+                      Binding="{Binding Price}" Width="*" />
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnSelect" Click="btnSelect_Click">+</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnSub" Click="btnSub_Click">-</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Date :" Foreground="Gold" HorizontalAlignment="Left" Height="40" Margin="40,173,0,0" VerticalAlignment="Top" Width="132"/>
+        <Button Content="Book Now" Background="LightGoldenrodYellow" HorizontalAlignment="Left" Height="49" Margin="780,441,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="txtbSelected" HorizontalAlignment="Left" Height="243" Margin="383,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328"/>
+        <Label x:Name="lblTotal" Content="0 Pesos" HorizontalAlignment="Left" Margin="780,360,0,0" VerticalAlignment="Top" Width="119" Height="40" FontWeight="Bold" FontSize="20"/>
+        <DatePicker Name="dtPicker" HorizontalAlignment="Left" Margin="44,196,0,0" VerticalAlignment="Top" Height="24" Width="186" />
+        <Label Content="Time :" Foreground="Gold" HorizontalAlignment="Left" Height="40" Margin="282,173,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Total Price :" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="780,302,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Avail Services :" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="379,302,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="      We will confirm your appointment with you by phone or e-mail within 24 hours of receiving your request." Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="40,577,0,0" VerticalAlignment="Top" Width="875" FontWeight="Bold" TextOptions.TextFormattingMode="Display"/>
+    </Grid>
+</Window>

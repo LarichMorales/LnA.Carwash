@@ -1,0 +1,53 @@
+﻿<Window x:Class="LnA.CarwashBooking.WIndows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LnA.CarwashBooking.WIndows"
+        mc:Ignorable="d"
+        Title="About" Height="720" Width="908.101">
+    <Grid Margin="0,0,0,-555" Height="1244" VerticalAlignment="Top" HorizontalAlignment="Left" Width="900">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="466*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="515*"/>
+            <RowDefinition Height="237*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <SolidColorBrush Color="CornflowerBlue"/>
+        </Grid.Background>
+        <Label Content="" Height="44" VerticalAlignment="Top" RenderTransformOrigin="0.501,0.938" HorizontalAlignment="Left" Width="900">
+            <Label.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </Label.Background>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="114" Source="Logo.png" Margin="53,36,0,0" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="74" Margin="207,44,0,0"  TextWrapping="Wrap" FontSize="24"  VerticalAlignment="Top" Width="522" TextAlignment="Center" Foreground="Gold"><Run Text="L" TextDecorations="Underline"/><Run Text=" "/><Run Foreground="Black" Text="&amp;" TextDecorations="Underline"/><Run Text=" "/><Run Text="A" TextDecorations="Underline"/><LineBreak/><Run Text="Online Car Wash Booking WebApps" TextDecorations="Underline"/></TextBlock>
+        <Label Content="Home" Foreground="Gold" FontSize="14" HorizontalAlignment="Left" Height="40" Margin="109,107,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="About" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="247,105,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="Services" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="386,105,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.791,0.7"/>
+        <Button BorderBrush="Transparent" BorderThickness="0" Padding="-4" Background="Transparent" Content="My Profile" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="535,100,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
+        <Label Content="Contact" BorderThickness="0" BorderBrush="CornflowerBlue" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="720,105,0,0" VerticalAlignment="Top" Width="85"/>
+        <Image HorizontalAlignment="Left" Height="175" VerticalAlignment="Top" Width="705" Source="kotse.jpg" Margin="100,152,0,0" Stretch="Fill"/>
+        <Label Content="Why Choose Us?" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="169,366,0,0" VerticalAlignment="Top" Width="163"/>
+        <TextBlock HorizontalAlignment="Left" Height="99" Margin="109,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" Grid.RowSpan="3" FontSize="10">
+        Our expertise in cleaning and detailing cars go along way with our team’s experience. Our working hands follow every contour of your vehicle, from Vintage, regular Sedan, SUV or Super Cars we value each moment pampering them. Our skills are driven with passion and not just by duty. We take pride on every vehicle that pass through our care and value most seeing that car shine amongst the rest.
+        </TextBlock>
+        <Label Content="Values" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="169,21,0,0" VerticalAlignment="Top" Width="163" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="70" Margin="109,50,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="10"><Run Text="SAFETY: Use all senses and take careful action"/><LineBreak/><Run Text="INTEGRITY: "/><Run Text="Stay "/><Run Text="honest and do what is right"/><LineBreak/><Run Text="TEAMWORK: Help others before they ask"/><LineBreak/><Run Text="FUN: Connect, Compete and Laugh"/></TextBlock>
+        <Label Content="Mission" Foreground="Gold" FontSize="20" HorizontalAlignment="Left" Height="40" Margin="631,0,0,0" VerticalAlignment="Top" Width="98" Grid.Row="2"/>
+        <Label Content="Vision" Foreground="Gold" FontSize="20" HorizontalAlignment="Left" Height="40" Margin="474,0,0,0" VerticalAlignment="Top" Width="94" Grid.Row="2"/>
+        <Label Content="The Big Difference" Foreground="Gold" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="535,366,0,0" VerticalAlignment="Top" Width="184"/>
+        <TextBlock HorizontalAlignment="Left" Height="53" Margin="601,45,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Text="To create smiles &amp; lifetime customers"/>
+        <TextBlock HorizontalAlignment="Left" Height="70" Margin="501,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="10">
+Everyday we strive to create the best possible experience to both our new customers and our partners. It’s not just part of our culture, but a goal we want to achieve.
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="83" VerticalAlignment="Top" Width="245" Source="cap.png" Margin="337,310,0,0" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="408,45,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="185">
+To be the service industry leader
+        </TextBlock>
+        <Label Content="Book an Appointment" Foreground="Black" FontSize="20" HorizontalAlignment="Left" Height="41" Margin="361,332,0,0" VerticalAlignment="Top" Width="219"/>
+        <Label Content="ABOUT US" Foreground="White" HorizontalAlignment="Left" Margin="375,208,0,0" VerticalAlignment="Top" Width="230" Height="68" FontSize="36"/>
+    </Grid>
+
+</Window>

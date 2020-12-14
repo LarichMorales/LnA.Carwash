@@ -1,0 +1,30 @@
+﻿<Window x:Class="LnA.CarwashBooking.WIndows.Users.UserAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LnA.CarwashBooking.WIndows.Users"
+        mc:Ignorable="d"
+        Title="UserAdd" Height="450" Width="800">
+    <Grid>
+        <Label Content="First Name" HorizontalAlignment="Left" Height="29" Margin="33,41,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Height="29" Margin="33,75,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.47,1.426"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="29" Margin="33,109,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="29" Margin="33,143,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Contact Number" HorizontalAlignment="Left" Height="29" Margin="33,177,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Vehicle" HorizontalAlignment="Left" Height="29" Margin="33,211,0,0" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="29" Margin="132,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="29" Margin="132,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="29" Margin="132,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="29" Margin="132,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="txtContactNumber" HorizontalAlignment="Left" Height="29" Margin="132,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="txtVehice" HorizontalAlignment="Left" Height="29" Margin="132,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="310"/>
+        <Label Content="Gender" HorizontalAlignment="Left" Height="29" Margin="33,240,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label Content="Role" HorizontalAlignment="Left" Height="29" Margin="33,269,0,0" VerticalAlignment="Top" Width="99"/>
+        <ComboBox x:Name="cboGender" HorizontalAlignment="Left" Height="24" Margin="132,245,0,0" VerticalAlignment="Top" Width="310"/>
+        <ComboBox x:Name="cboRole" HorizontalAlignment="Left" Height="24" Margin="132,274,0,0" VerticalAlignment="Top" Width="310"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Height="37" Margin="69,338,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Height="37" Margin="207,338,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
